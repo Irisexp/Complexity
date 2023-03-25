@@ -1,0 +1,31 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+
+{% block title %}
+Task 3: Dice Test
+{% endblock %}
+
+{% block content %}
+<br>
+<font size="+2">
+The following very short experiment has nothing to do with the decision problem you have just participated.  <br>
+You are going to receive an additional payoff for this additional task and that this payoff would be different for each participant. To determine your individual payoff, you are requested to roll a die and to memorize the figure rolled. <br>
+The payoff would equal 1, 2, 3, 4, or 5 ($) if the die number that came up is the corresponding payoff amount, and 0 if the die number that came up is a 6. <br>
+
+That means, you get $0 if you draw 6, $5 if you draw 5, $4 if you draw 4, $3 if you draw 3, $2 if you draw 2, and $1 if you draw 1. <br><br>
+
+You can roll the die more than once in order to check whether the die is fair. However, Only <b>the first throw</b> is relevant for the payoff and therefore should be kept in mind.
+Now please row the die.
+
+<br><br>
+
+Please enter an integer below: <br> <br>
+
+{% formfield player.Q1_choice %}
+</font>
+<br><br>
+{% next_button %}
+
+{% endblock %}
+
