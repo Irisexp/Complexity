@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block content %}
+
+<font size="+2">
+Please enter an integer below: <br> <br>
+
+{% formfield player.Q1_choice %} cents
+
+</font>
+<br><br>
+{% next_button %}
+
+{% endblock %}
+
