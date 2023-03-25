@@ -1,0 +1,48 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Receiver Guess Plan
+{% endblock %}
+
+{% block content %}
+
+
+    3.	Suppose the receiver chooses the following three questions to ask the sender: <br>
+
+    What's the background color of the card? <br>
+
+    What's the center shape of the card? <br>
+
+    What's the center letter of the card? <br>
+
+    Suppose the sender reports the set to be <b>Middle</b>, which of the following are truthful messages?
+
+
+
+{% formfield player.Q3_choice %}
+
+<br><br>
+
+<b>Up</b> card is as below: <br><br>
+
+<img src="{% static "Simple_message/Up_first.jpg" %}" width="200px"/><br><br>
+
+
+<b>Middle</b> card is as below: <br><br>
+
+<img src="{% static "Simple_message/Middle_first.jpg" %}" width="200px"/><br><br>
+
+
+<b>Down</b> card is as below: <br><br>
+
+<img src="{% static "Simple_message/Down_first.jpg" %}" width="200px"/><br><br>
+
+
+
+    {% next_button %}
+
+
+
+{% endblock %}
+
